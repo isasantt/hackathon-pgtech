@@ -1,0 +1,24 @@
+{
+  "contexto_geografico": "Baixada Santista (Praia Grande e Santos)",
+  "sazonalidade": {
+    "evento_proximo": "Feriado de Nossa Senhora Aparecida (12 de Outubro)",
+    "previsao_tempo": "Ensolarado, máxima de 34°C",
+    "expectativa_turistas": "Aumento de 40% na população flutuante segundo a prefeitura e concessionárias de pedágio."
+  },
+  "monitoramento_concorrencia": [
+    {
+      "concorrente": "MegaFibra Telecom",
+      "status": "Instabilidade Severa",
+      "volume_mencoes_twitter": 1450,
+      "bairros_afetados": ["Canto do Forte", "Boqueirão"],
+      "reclamacao_principal": "Rompimento de cabo, mais de 12 horas sem internet. Usuários muito irritados."
+    },
+    {
+      "concorrente": "VelozNet",
+      "status": "Operação Normal",
+      "volume_mencoes_twitter": 12,
+      "bairros_afetados": [],
+      "reclamacao_principal": "Nenhuma"
+    }
+  ]
+}

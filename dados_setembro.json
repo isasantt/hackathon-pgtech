@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "cliente": "Camila Duarte",
+    "regiao": "Solemar, Praia Grande - SP",
+    "canal": "Reclame Aqui",
+    "avaliacao": "Basta chover um pouco que o sinal cai. Setembro choveu bastante e passei metade do mês no 4G do meu celular. Quero desconto na fatura!"
+  },
+  {
+    "id": 2,
+    "cliente": "Felipe Rocha",
+    "regiao": "Gonzaguinha, São Vicente - SP",
+    "canal": "Google Avaliações",
+    "avaliacao": "Do nada minha fatura de setembro veio com 40 reais de acréscimo. Fui ver e embutiram um 'pacote de segurança' que eu não pedi. Absurdo."
+  },
+  {
+    "id": 3,
+    "cliente": "Juliana Castro",
+    "regiao": "Ponta da Praia, Santos - SP",
+    "canal": "Reclame Aqui",
+    "avaliacao": "A internet cai todo dia às 20h. Parece que quando todo mundo chega do trabalho a rede não aguenta. Tentei reclamar, mas fecham o chamado sozinhos."
+  },
+  {
+    "id": 4,
+    "cliente": "Thiago Martins",
+    "regiao": "Maracanã, Praia Grande - SP",
+    "canal": "Google Avaliações",
+    "avaliacao": "Apesar da chuva, minha internet não caiu nenhuma vez. Troquei de operadora mês passado e estou muito satisfeito com a estabilidade."
+  },
+  {
+    "id": 5,
+    "cliente": "Beatriz Novaes",
+    "regiao": "Ocian, Praia Grande - SP",
+    "canal": "Reclame Aqui",
+    "avaliacao": "Me cobraram visita técnica de 90 reais pra consertar um cabo que rompeu no poste da rua! O problema é na rua e eles jogam o custo pro cliente. Vou ao Procon."
+  }
+]

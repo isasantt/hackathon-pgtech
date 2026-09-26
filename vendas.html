@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETECC Telecom - Rotas de Vendas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- Cabeçalho -->
+    <header class="bg-red-600 text-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center gap-8">
+            <a href="retencao.html" class="flex items-center">
+                <img src="logo-etecc.png" alt="ETECC Telecom" class="h-9 w-auto object-contain">
+            </a>
+            <nav class="hidden md:flex gap-6 text-sm font-medium mt-1">
+                <a href="retencao.html" class="text-red-200 hover:text-white transition-colors">Retenção</a>
+                <a href="atracao.html" class="text-red-200 hover:text-white transition-colors">Atração</a>
+                <a href="vendas.html" class="border-b-2 border-white pb-1 text-white">Vendas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-6">
+        <div class="mb-8">
+            <h1 class="text-2xl font-bold text-gray-800">Direcionamento Porta a Porta (PAP)</h1>
+            <p class="text-gray-500 text-sm">O Score de Propensão cruza vulnerabilidade da concorrência, poder aquisitivo e densidade de veranistas.</p>
+        </div>
+
+        <div class="space-y-4">
+            
+            <!-- Zona Quente 1 -->
+            <div class="bg-white border-l-4 border-red-600 rounded-r-xl shadow-sm p-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-1">
+                        <span class="bg-red-100 text-red-700 text-xs font-bold px-2.5 py-1 rounded-md">ZONA QUENTE</span>
+                        <h2 class="text-xl font-bold text-gray-800">Canto do Forte, Praia Grande</h2>
+                    </div>
+                    <p class="text-sm text-gray-600"><strong class="text-gray-800">Motivo:</strong> Alta concentração de apartamentos de veraneio sem internet ativa + Falha estrutural recente do concorrente principal.</p>
+                </div>
+                <div class="flex items-center gap-6 shrink-0">
+                    <div class="text-center">
+                        <p class="text-3xl font-black text-red-600">98</p>
+                        <p class="text-xs font-bold text-gray-400 uppercase">Score (0-100)</p>
+                    </div>
+                    <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-lg text-sm transition-colors border border-gray-200">
+                        Atribuir Equipe
+                    </button>
+                </div>
+            </div>
+
+            <!-- Zona Quente 2 -->
+            <div class="bg-white border-l-4 border-orange-500 rounded-r-xl shadow-sm p-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-1">
+                        <span class="bg-orange-100 text-orange-700 text-xs font-bold px-2.5 py-1 rounded-md">ZONA QUENTE</span>
+                        <h2 class="text-xl font-bold text-gray-800">Boqueirão, Santos</h2>
+                    </div>
+                    <p class="text-sm text-gray-600"><strong class="text-gray-800">Motivo:</strong> Alta densidade demográfica. Algoritmo detectou aumento de 22% em buscas por "cancelar internet" nesta região no Google Trends local.</p>
+                </div>
+                <div class="flex items-center gap-6 shrink-0">
+                    <div class="text-center">
+                        <p class="text-3xl font-black text-orange-500">85</p>
+                        <p class="text-xs font-bold text-gray-400 uppercase">Score (0-100)</p>
+                    </div>
+                    <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-lg text-sm transition-colors border border-gray-200">
+                        Atribuir Equipe
+                    </button>
+                </div>
+            </div>
+
+            <!-- Zona Fria -->
+            <div class="bg-white border-l-4 border-gray-300 rounded-r-xl shadow-sm p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 opacity-75">
+                <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-1">
+                        <span class="bg-gray-100 text-gray-500 text-xs font-bold px-2.5 py-1 rounded-md">ZONA FRIA</span>
+                        <h2 class="text-xl font-bold text-gray-600">Vila Tupi, Praia Grande</h2>
+                    </div>
+                    <p class="text-sm text-gray-500"><strong class="text-gray-600">Motivo:</strong> Mercado saturado. Concorrência local acabou de lançar promoção agressiva de fidelidade.</p>
+                </div>
+                <div class="flex items-center gap-6 shrink-0">
+                    <div class="text-center">
+                        <p class="text-3xl font-black text-gray-400">42</p>
+                        <p class="text-xs font-bold text-gray-400 uppercase">Score (0-100)</p>
+                    </div>
+                    <button class="bg-gray-50 text-gray-400 cursor-not-allowed font-semibold py-2 px-4 rounded-lg text-sm border border-gray-100" disabled>
+                        Baixa Propensão
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>

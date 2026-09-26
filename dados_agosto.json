@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "cliente": "Marcos Silva",
+    "regiao": "Gonzaga, Santos - SP",
+    "canal": "Reclame Aqui",
+    "avaliacao": "Fiquei 3 dias sem internet na segunda semana de agosto. Ligo e o robô só manda reiniciar o modem. Descaso total com o cliente."
+  },
+  {
+    "id": 2,
+    "cliente": "Patricia Nunes",
+    "regiao": "Boqueirão, Praia Grande - SP",
+    "canal": "Google Avaliações",
+    "avaliacao": "A internet é boa, mas o aplicativo para pegar a segunda via da fatura vive fora do ar. Todo mês preciso implorar pelo boleto no WhatsApp."
+  },
+  {
+    "id": 3,
+    "cliente": "Roberto Carlos",
+    "regiao": "Canto do Forte, Praia Grande - SP",
+    "canal": "Reclame Aqui",
+    "avaliacao": "Cancelei no final de julho e continuaram me cobrando em agosto! Estão me ameaçando sujar meu nome por uma fatura de um serviço que já foi cortado."
+  },
+  {
+    "id": 4,
+    "cliente": "Aline Costa",
+    "regiao": "Vila Mathias, Santos - SP",
+    "canal": "Google Avaliações",
+    "avaliacao": "Técnico veio rápido instalar, serviço limpo e internet batendo a velocidade contratada. Excelente até agora."
+  },
+  {
+    "id": 5,
+    "cliente": "Diego Mendes",
+    "regiao": "Guilhermina, Praia Grande - SP",
+    "canal": "Reclame Aqui",
+    "avaliacao": "O suporte técnico humano simplesmente não existe. Você passa por 5 menus no telefone e a ligação cai. Perdi clientes do meu home office por causa disso."
+  }
+]

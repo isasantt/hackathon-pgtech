@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETECC Telecom - Atração AaaS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- Cabeçalho -->
+    <header class="bg-red-600 text-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center gap-8">
+            <a href="retencao.html" class="flex items-center">
+                <img src="logo-etecc.png" alt="ETECC Telecom" class="h-9 w-auto object-contain">
+            </a>
+            <nav class="hidden md:flex gap-6 text-sm font-medium mt-1">
+                <a href="retencao.html" class="text-red-200 hover:text-white transition-colors">Retenção</a>
+                <a href="atracao.html" class="border-b-2 border-white pb-1 text-white">Atração</a>
+                <a href="vendas.html" class="text-red-200 hover:text-white transition-colors">Vendas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-6">
+        <div class="flex justify-between items-end mb-6">
+            <div>
+                <h1 class="text-2xl font-bold text-gray-800">Radar de Oportunidades (IA)</h1>
+                <p class="text-gray-500 text-sm">Cruzamento de dados demográficos, clima e vulnerabilidade da concorrência.</p>
+            </div>
+            <!-- Adicionei um ID aqui caso queira fazer ele piscar durante o loading -->
+            <span id="statusRadar" class="bg-emerald-100 text-emerald-700 text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-2 transition-colors">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Radar Ativo
+            </span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+            <!-- Gatilho: Sazonalidade -->
+            <div class="bg-white rounded-xl shadow-sm p-5 border-t-4 border-blue-500">
+                <h3 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Vetor 1: Sazonalidade</h3>
+                <div class="flex items-center gap-3 mb-2">
+                    <svg class="w-8 h-8 text-blue-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    <div>
+                        <p id="sazoTitulo" class="font-bold text-gray-800">Feriado Prolongado (15/Nov)</p>
+                        <p id="sazoClima" class="text-sm text-blue-600 font-medium">Previsão: Sol forte (32°C)</p>
+                    </div>
+                </div>
+                <p id="sazoDescricao" class="text-sm text-gray-600 mt-3">Projeção de IBGE e pedágios indica influxo de 350 mil veranistas para a orla nos próximos 3 dias.</p>
+            </div>
+
+            <!-- Gatilho: Concorrência -->
+            <div class="bg-white rounded-xl shadow-sm p-5 border-t-4 border-orange-500">
+                <h3 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Vetor 2: Concorrência</h3>
+                <div class="flex items-center gap-3 mb-2">
+                    <svg class="w-8 h-8 text-orange-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    <div>
+                        <p id="concTitulo" class="font-bold text-gray-800">Operadora Azul (Queda)</p>
+                        <p id="concAlerta" class="text-sm text-orange-600 font-medium">Pico de menções no X/Twitter</p>
+                    </div>
+                </div>
+                <p id="concDescricao" class="text-sm text-gray-600 mt-3">Rompimento de fibra detectado via scraping social. Bairros afetados há mais de 6 horas.</p>
+            </div>
+
+            <!-- Gatilho: Ação Prescrita -->
+            <div class="bg-red-600 rounded-xl shadow-md p-5 text-white flex flex-col justify-center">
+                <h3 class="text-xs font-bold text-red-200 uppercase tracking-wider mb-2">Decisão Algorítmica (IA)</h3>
+                <p id="decisaoCampanha" class="font-bold text-lg mb-2">Campanha "Internet de Férias"</p>
+                <p id="decisaoAcao" class="text-sm text-red-100 mb-4">Redirecionar 60% da verba de Ads geolocalizados para os bairros afetados da concorrência oferecendo instalação em 24h.</p>
+                <button class="bg-white text-red-600 font-bold py-2 px-4 rounded-lg text-sm hover:bg-gray-100 transition-colors shadow-sm">
+                    Aprovar Disparo de Ads
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Script da página de Atração -->
+    <script src="atracao.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+[
+  {
+    "bairro": "Canto do Forte, Praia Grande",
+    "perfil": "Alta concentração de apartamentos de veraneio. População de alta renda.",
+    "status_concorrencia": "Concorrente principal (MegaFibra) com falha estrutural há 12 horas.",
+    "sinal_google_trends": "Buscas por 'assinar nova internet' subiram 45% nas últimas 6 horas."
+  },
+  {
+    "bairro": "Boqueirão, Santos",
+    "perfil": "Alta densidade demográfica, áreas comerciais e residenciais mistas.",
+    "status_concorrencia": "Sem falhas de fibra, mas relatos frequentes de lentidão no 5G da operadora móvel líder.",
+    "sinal_google_trends": "Aumento de 22% em buscas por 'cancelar internet' nesta região."
+  },
+  {
+    "bairro": "Vila Tupi, Praia Grande",
+    "perfil": "Mercado saturado com residentes fixos de classe média.",
+    "status_concorrencia": "Operadora local lançou promoção agressiva de fidelidade de 24 meses ontem.",
+    "sinal_google_trends": "Buscas estáveis. Nenhuma anomalia detectada."
+  },
+  {
+    "bairro": "Gonzaguinha, São Vicente",
+    "perfil": "Área mista com muitos comércios locais que dependem de delivery/internet.",
+    "status_concorrencia": "Micro-quedas constantes relatadas no Twitter na última hora.",
+    "sinal_google_trends": "Buscas por 'internet caindo' em alta."
+  }
+]
