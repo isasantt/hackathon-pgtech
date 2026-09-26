@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETECC Telecom - Treinamento IA WhatsApp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans min-h-screen flex flex-col">
+
+    <!-- Cabeçalho -->
+    <header class="bg-red-600 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center gap-8">
+            <a href="retencao.html" class="flex items-center">
+                <img src="logo-etecc.png" alt="ETECC Telecom" class="h-9 w-auto object-contain">
+            </a>
+            <nav class="hidden md:flex gap-6 text-sm font-medium mt-1">
+                <a href="retencao.html" class="text-red-200 hover:text-white transition-colors">Retenção</a>
+                <a href="atracao.html" class="text-red-200 hover:text-white transition-colors">Atração</a>
+                <a href="vendas.html" class="text-red-200 hover:text-white transition-colors">Vendas</a>
+                <a href="whatsapp.html" class="border-b-2 border-white pb-1 text-white">Agente WhatsApp</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8 flex-1 w-full">
+        <div class="mb-8">
+            <h1 class="text-2xl font-bold text-gray-800">Centro de Treinamento IA (WhatsApp)</h1>
+            <p class="text-gray-500 text-sm">Faça o upload de bases de conhecimento e defina o comportamento do agente de retenção.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- Coluna 1 e 2: Configurações e Upload -->
+            <div class="lg:col-span-2 space-y-6">
+                
+                <!-- Bloco: Base de Conhecimento (Upload) -->
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <h2 class="text-lg font-bold text-gray-800 mb-1">1. Base de Conhecimento (Upload de Arquivos)</h2>
+                    <p class="text-sm text-gray-500 mb-4">A IA usará estes documentos como fonte de verdade para responder aos clientes.</p>
+                    
+                    <!-- Área de Drag & Drop -->
+                    <div class="border-2 border-dashed border-gray-300 rounded-xl p-8 flex flex-col items-center justify-center text-center hover:border-red-500 hover:bg-red-50 transition-colors cursor-pointer group mb-6">
+                        <div class="bg-gray-100 p-3 rounded-full text-gray-400 group-hover:bg-red-100 group-hover:text-red-500 mb-3 transition-colors">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path></svg>
+                        </div>
+                        <p class="text-sm font-bold text-gray-700">Clique para enviar ou arraste arquivos aqui</p>
+                        <p class="text-xs text-gray-500 mt-1">Suporta PDF, DOCX, TXT e CSV (Máx. 50MB)</p>
+                    </div>
+
+                    <!-- Lista de Arquivos Mockados -->
+                    <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Arquivos Ativos no Treinamento</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between p-3 border border-gray-100 bg-gray-50 rounded-lg">
+                            <div class="flex items-center gap-3">
+                                <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
+                                <div>
+                                    <p class="text-sm font-bold text-gray-700">Tabela_de_Descontos_Retencao_2026.pdf</p>
+                                    <p class="text-xs text-gray-500">1.2 MB • Processado pela IA</p>
+                                </div>
+                            </div>
+                            <button class="text-gray-400 hover:text-red-500 transition-colors"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg></button>
+                        </div>
+                        <div class="flex items-center justify-between p-3 border border-gray-100 bg-gray-50 rounded-lg">
+                            <div class="flex items-center gap-3">
+                                <svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
+                                <div>
+                                    <p class="text-sm font-bold text-gray-700">FAQ_Problemas_Sinal_Roteador.csv</p>
+                                    <p class="text-xs text-gray-500">85 KB • Processado pela IA</p>
+                                </div>
+                            </div>
+                            <button class="text-gray-400 hover:text-red-500 transition-colors"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloco: Comportamento -->
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <h2 class="text-lg font-bold text-gray-800 mb-1">2. Prompt de Sistema (Personalidade)</h2>
+                    <p class="text-sm text-gray-500 mb-4">Defina o tom de voz e as regras de negócio do agente de atendimento.</p>
+                    
+                    <textarea class="w-full h-32 p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 text-sm text-gray-700 resize-none" placeholder="Instruções para a IA...">Você é a IA da ETECC, assistente virtual de retenção da ETECC Telecom. 
+Seu objetivo é evitar cancelamentos sendo empática e ágil. 
+Regra de Ouro: Se o cliente citar problemas de "Cobrança Indevida", consulte o documento Tabela_de_Descontos_Retencao_2026 e ofereça estorno imediato + 20% de desconto na próxima fatura.</textarea>
+                    
+                    <div class="mt-5 flex justify-end">
+                        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 px-6 rounded-lg shadow-sm transition-colors flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                            Atualizar e Treinar Modelo
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Coluna 3: Simulador WhatsApp (Design fiel) -->
+            <div class="lg:col-span-1">
+                <div class="bg-[#efeae2] border border-gray-200 rounded-2xl overflow-hidden shadow-xl flex flex-col h-[650px] relative">
+                    
+                    <!-- Top bar WhatsApp -->
+                    <div class="bg-[#00a884] px-4 py-3 flex items-center gap-3 shadow-sm z-10">
+                        <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-lg">🤖</div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-white text-base leading-tight">IA da ETECC</h3>
+                            <p class="text-xs text-white/80">IA treinada e ativa</p>
+                        </div>
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"></path></svg>
+                    </div>
+
+                    <!-- Área de Chat -->
+                    <div class="flex-1 p-4 overflow-y-auto space-y-4" style="background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png'); background-blend-mode: multiply;">
+                        
+                        <!-- Mensagem Usuário -->
+                        <div class="flex justify-end">
+                            <div class="bg-[#dcf8c6] text-gray-800 p-2.5 rounded-lg rounded-tr-none max-w-[85%] shadow-sm text-sm relative">
+                                Veio cobrando um valor a mais na minha fatura, quero cancelar minha internet agora!
+                                <span class="text-[10px] text-gray-500 float-right mt-2 ml-3">15:42 ✓✓</span>
+                            </div>
+                        </div>
+
+                        <!-- Balão de Loading / Digitando (simulação visual) -->
+                        <div class="flex justify-start opacity-70">
+                            <div class="bg-white text-gray-500 p-2.5 rounded-lg rounded-tl-none shadow-sm text-sm italic flex items-center gap-2">
+                                <svg class="w-4 h-4 animate-spin text-gray-400" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+                                Consultando Tabela_de_Descontos_Retencao_2026.pdf...
+                            </div>
+                        </div>
+
+                        <!-- Mensagem IA -->
+                        <div class="flex justify-start">
+                            <div class="bg-white text-gray-800 p-2.5 rounded-lg rounded-tl-none max-w-[85%] shadow-sm text-sm relative">
+                                Poxa, sinto muito por esse transtorno com a sua fatura! 😔 <br><br>
+                                Já localizei o erro sistêmico. Para resolvermos isso sem você precisar cancelar, posso fazer o estorno imediato desse valor a mais e **aplicar 20% de desconto** na sua próxima fatura, conforme nossa política. O que acha?
+                                <span class="text-[10px] text-gray-400 float-right mt-2 ml-3">15:42</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Input Bar -->
+                    <div class="bg-[#f0f2f5] p-3 flex items-center gap-2">
+                        <div class="text-gray-500 p-2">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <input type="text" class="flex-1 h-10 rounded-full px-4 border-none focus:ring-0 text-sm shadow-sm" placeholder="Teste o modelo de retenção..." disabled>
+                        <button class="bg-[#00a884] text-white w-10 h-10 rounded-full flex items-center justify-center shadow-sm opacity-50 cursor-not-allowed">
+                            <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"></path></svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
