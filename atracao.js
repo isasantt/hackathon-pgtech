@@ -3,11 +3,25 @@
  * Lógica de inteligência de mercado com Google Gemini Flash
  */
 
-// 1. Configurações da API Gemini (carregada dinamicamente do .env)
+// 1. Configurações da API Gemini (carregada da Vercel ou do .env local)
 let cachedApiKeyAtracao = null;
 
 async function obterChaveGemini() {
     if (cachedApiKeyAtracao) return cachedApiKeyAtracao;
+
+    // A. Tenta obter da rota serverless da Vercel (/api/config)
+    try {
+        const resApi = await fetch("/api/config");
+        if (resApi.ok) {
+            const data = await resApi.json();
+            if (data?.apiKey) {
+                cachedApiKeyAtracao = data.apiKey.trim();
+                return cachedApiKeyAtracao;
+            }
+        }
+    } catch (_) {}
+
+    // B. Tenta obter do arquivo .env local (desenvolvimento local)
     try {
         const resposta = await fetch(".env");
         if (resposta.ok) {
@@ -19,8 +33,9 @@ async function obterChaveGemini() {
             }
         }
     } catch (e) {
-        console.warn("[Config] Não foi possível ler .env:", e);
+        console.warn("[Config] Não foi possível ler .env local:", e);
     }
+
     return window.GEMINI_API_KEY || "";
 }
 

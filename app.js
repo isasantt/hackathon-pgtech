@@ -3,11 +3,25 @@
  * Fluxo Dinâmico com IA (Google Gemini Flash) e Visualização (ApexCharts Bar Chart)
  */
 
-// 1. Configurações da API Gemini (carregada do .env)
+// 1. Configurações da API Gemini (carregada da Vercel ou do .env local)
 let cachedApiKey = null;
 
 async function obterChaveGemini() {
     if (cachedApiKey) return cachedApiKey;
+
+    // A. Tenta obter da rota serverless da Vercel (/api/config)
+    try {
+        const resApi = await fetch("/api/config");
+        if (resApi.ok) {
+            const data = await resApi.json();
+            if (data?.apiKey) {
+                cachedApiKey = data.apiKey.trim();
+                return cachedApiKey;
+            }
+        }
+    } catch (_) {}
+
+    // B. Tenta obter do arquivo .env local (desenvolvimento local)
     try {
         const resposta = await fetch(".env");
         if (resposta.ok) {
@@ -19,8 +33,9 @@ async function obterChaveGemini() {
             }
         }
     } catch (e) {
-        console.warn("[Config] Não foi possível ler .env:", e);
+        console.warn("[Config] Não foi possível ler .env local:", e);
     }
+
     return window.GEMINI_API_KEY || "";
 }
 
